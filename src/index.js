@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Ex1 from './Ex1/Ex1';
+import Ex2 from './Ex2/Ex2';
+import Ex3 from './Ex3/Ex3';
+import Ex4 from './Ex4/Ex4';
+
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Ex1></Ex1>
+    <Ex2></Ex2>
+    <Ex3></Ex3>
+    <Ex4></Ex4>
   </React.StrictMode>
 );
 

@@ -1,0 +1,22 @@
+.Ex3-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 330px;
+  margin: 0 auto;
+}
+
+.Ex3-container h1{
+  margin-bottom: 10px;
+}
+
+.Ex3-container input{
+  margin: 6px;
+  margin-left: 20px;
+}
+
+.Ex3-container p{
+  margin-top: 10px;
+}
+

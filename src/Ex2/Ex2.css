@@ -1,0 +1,28 @@
+.Animal-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Animal-list{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 20%;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.Animal-container li{
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.Animal-container li img{
+  display: block;
+  margin-right: 10px;
+  margin-left: 15px;
+}

@@ -1,0 +1,16 @@
+.Ex4-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+}
+
+.Ex4-container button{
+  padding: 7px 10px;
+}
+
+.Ex4-container button:hover{
+  cursor: pointer;
+}
