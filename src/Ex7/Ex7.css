@@ -1,0 +1,22 @@
+.Ex7-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+}
+
+.Ex7-container label{
+  margin-right: 10px;
+}
+
+.Ex7-container ul{
+  text-align: center;
+  list-style-type: none;
+  min-height: 162px;
+}
+
+.Ex7-container ul li{
+  margin: 5px 0;
+}

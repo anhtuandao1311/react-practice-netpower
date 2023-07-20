@@ -1,0 +1,23 @@
+.Ex6-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3eec0;
+  gap:15px;
+}
+
+.Ex6-container .Item{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 25px 20px;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 3px 10px #7e7a7a;
+}
+
+.Ex6-container .Item h1{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
