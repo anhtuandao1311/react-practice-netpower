@@ -1,5 +1,5 @@
 import './Ex5.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 
 function Ex5() {

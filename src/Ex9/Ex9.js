@@ -1,40 +1,44 @@
 import './Ex9.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
+function UserItem({ user }) {
+  return (
+    <div>
+      <img src={user.avatar} alt='avatar'></img>
+      <h2>{user.first_name} {user.last_name}</h2>
+      <p>{user.employment.title}</p>
+    </div>
+  )
+}
 
 function Ex9() {
-  let fruits = [
-    "Banana",
-    "Apple",
-    "Orange",
-    "Mango",
-    "Pineapple",
-    "Watermelon"
-  ]
+  const [refresh, setRefresh] = useState(0)
+  const [users, setUsers] = useState([])
 
-  const [items, setItems] = useState(fruits)
+  useEffect(() => {
+    fetch('https://random-data-api.com/api/users/random_user?size=10')
+      .then(res => res.json())
+      .then(users => {
+        setUsers(users)
+      })
+  }, [refresh])
 
-  const handleChecked = (e) => {
-    let searchVal = e.target.value
-    searchVal = searchVal.toLowerCase()
-    setItems(fruits.filter(fruit => {
-      const cond = fruit.toLowerCase().indexOf(searchVal) >= 0
-      return cond
-    }))
+  const handleClick = () => {
+    setRefresh(refresh + 1)
   }
-  return (
-    <div className='Ex7-container'>
-      <div>
-        <label httpfor="fruit">Search:</label>
-        <input onChange={handleChecked} id='fruit' />
-      </div>
 
-      <ul>
-        {
-          items.map((item, id) => {
-            return <li key={id}>{item}</li>
-          })
-        }
-      </ul>
+  return (
+    <div className='Ex9-container'>
+      <div className='Button'>
+        <button onClick={handleClick}>Fetch Random</button>
+      </div>
+        <div className='User-list'>
+          {
+            users.map(user => (
+              <UserItem user={user}></UserItem>
+            ))
+          }
+        </div>
     </div>
 
   )
