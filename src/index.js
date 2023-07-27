@@ -9,6 +9,7 @@ import Ex4 from './Ex4/Ex4';
 import Ex5 from './Ex5/Ex5';
 import Ex6 from './Ex6/Ex6';
 import Ex7 from './Ex7/Ex7';
+import Ex8 from './Ex8/Ex8';
 import Ex9 from './Ex9/Ex9';
 import Ex10 from './Ex10/Ex10';
 
@@ -28,6 +29,7 @@ root.render(
         <Route path='/exercise5' element={<Ex5></Ex5>}></Route>
         <Route path='/exercise6' element={<Ex6></Ex6>}></Route>
         <Route path='/exercise7' element={<Ex7></Ex7>}></Route>
+        <Route path='/exercise8' element={<Ex8></Ex8>}></Route>
         <Route path='/exercise9' element={<Ex9></Ex9>}></Route>
       </Routes>
     </Router>

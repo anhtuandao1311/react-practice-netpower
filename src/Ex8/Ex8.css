@@ -1,0 +1,63 @@
+.Ex8-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-list {
+  display: flex;
+  transition: transform ease-out 0.5s;
+  width: 560px;
+}
+
+.img-list img {
+  display: block;
+
+}
+
+.btn-list {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.btn-list button {
+  background: #fff;
+  opacity: 0.8;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn-list button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.small-img-list {
+  position: absolute;
+  top: 340px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.small-img-list div {
+  display: flex;
+  gap: 10px;
+}
+
+.small-img-list img {
+  width: 70px;
+}
+
+.is-active{
+  outline: 5px solid #ccc;
+}

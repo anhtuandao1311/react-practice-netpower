@@ -1,7 +1,7 @@
 .Navbar{
   display: flex;
   justify-content: center;
-  gap:20px;
+  gap:10px;
   list-style-type: none;
   position: fixed;
   top:0;
@@ -11,4 +11,14 @@
   right: 0;
   align-items: center;
   z-index: 1;
+}
+
+.Navbar li::after{
+  content: "|";
+  margin-left: 10px;
+}
+
+.Navbar li:last-child::after{
+  content: "";
+  margin-left: 0;
 }
